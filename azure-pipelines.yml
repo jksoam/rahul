@@ -13,7 +13,9 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    backendAzureRmUseEntraIdForAuthentication: false
     backendServiceArm: 'service-jk'
+    backendAzureRmOverrideSubscriptionID: '3ace2f6c-7fad-4649-99ca-c60df54b9873'
     backendAzureRmResourceGroupName: 'jksoam'
     backendAzureRmStorageAccountName: 'jksoam123456'
     backendAzureRmContainerName: 'jksoam'
